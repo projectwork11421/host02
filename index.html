@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar system</title>
+  <link rel="icon" href="https://www.bing.com/images/blob?bcid=S6iqpjZ5ZEIHcmQnkY5leUySfyhl.....9o">
+<style>
+    body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}.sun{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url('https://th.bing.com/th/id/R.3ab61b2566db7a3ea287c84cbe366a83?rik=Lkm%2buIkQWyV%2fxg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fsun-png-bright-sun-2249.png&ehk=RFiM7TYhJPpGfUBJjrBSqgbayQ%2bQ1B8qv7ZO9WW9Uv8%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;background-repeat: no-repeat;
+  animation: spin 5s linear infinite;
+}.earth {
+  position: absolute;
+  top: 150%;
+  left: 200%;
+  width: 80px;
+  height: 80px;
+ background: url('https://th.bing.com/th/id/R.0e44c9dab4cb1e5ca0aa9777e98d1718?rik=KiR6CE8zlUb21A&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-earth-planet-globe-worldnatureearthglobeplanetworld-9615246779010hvvt.png&ehk=eHh%2bUpvkEIdrnYszQca98wLi%2fZoicdAQBalf3%2bEtEqk%3d&risl=1&pid=ImgRaw&r=0');
+  background-size: cover;background-repeat: no-repeat;
+  /* border: 1px solid #fff; */
+  border-radius: 50%;
+  animation-delay: .5s;
+}
+
+.mercury{
+  position: absolute;
+  top: 0%;
+  left: 120%;
+  transform:(360deg, 180deg);
+  width: 80px;
+  height: 80px;
+  background: url('https://th.bing.com/th/id/OIP.gRAC4Uos-TyFkz7PZMG4UAHaHa?rs=1&pid=ImgDetMain');
+  background-size: cover;background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.jupiter{
+  position: absolute;
+  top: 250%;
+  left: 150%;
+  transform:(180deg, 360deg);
+  width: 120px;
+  height: 120px;
+  background: url('https://th.bing.com/th/id/OIP.Ndqj6Wnwv5kD6eRpuM_jJgHaHb?rs=1&pid=ImgDetMain');
+  background-size: cover;background-repeat: no-repeat;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}.venus{
+    position: absolute;
+  top: 60%;
+  left: 180%;
+  transform:(180deg, 360deg);
+  width: 80px;
+  height: 80px;
+  background: url('https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1237688/mars-clipart-md.png');
+  background-size: cover;background-repeat: no-repeat;
+  border-radius: 50%; 
+  animation-delay: 2s;  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="sun">
+  <div class="earth"></div>
+  <div class="mercury"></div>
+  <div class="venus"></div>
+ <div class="jupiter"></div>
+ </div>
+</body>
+</html>
